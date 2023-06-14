@@ -1,0 +1,60 @@
+				NodeJS:Run time Enviorment + JS library  - Backend Technology
+	=======================================================
+	- Create client server application
+	- Features
+		- Extremely Fast
+		- Asynchronous and Event driven
+		- Single thrededed
+		- Highly scalable - it can use in complex 
+		- No Buffering
+		- Open source
+	- Node JS parts
+		- Global Objects - setTimeOut(), console.log() 
+		- Modules: require('file') - it s a method- using import files
+			- Buit in Modules
+				- fs 
+				- path
+				- process : enviormental variable	***
+				- http
+				- https
+				- events ****
+				- crypto
+			- Userdefiend	: using module.export for exporting and require for importing
+	- packages: npm - npm i package-name
+		- package.json - npm init -y
+		- node-modules 
+		- package-lock.json -configuration file -hold version
+	- Node Backend Concepts
+		- Client Server Architecture
+			- Server side
+			- http	
+		- API
+		- CRUD application CREATON
+		- RESTful API
+		- json
+		- CORS : Cross Origin Resource Sharing
+	Express : Frame work of NodeJS
+		-Features
+			-fast, minimalise
+		- packages	
+			- express
+			- cors
+			- dotenv
+			-mongoose -Elegant MongoDB object modeling for Node.js
+				- install mongoose : npm i mongoose
+			-Middleware: is a function used to control request response cycle 
+				- to create a Middleware :
+					- function name(req,res,next){}
+				-Types of Middleware
+					- Appilication  specific  Middleware :works for all request
+						-eg:express.json() -predefined Middleware
+					- Router Specific Middleware: works in specific routes
+				-Authorisation :using jsonwebtoken
+					- install jsonwebtoken: npm i jsonwebtoken
+					- using jsonwebtoken, generate token in controller
+						- generate token : using sign()
+						- verify token in Router Specific Middleware :verify(token,secrete)
+			
+			
+		
+	

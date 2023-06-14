@@ -1,0 +1,42 @@
+                Bank -Back end      monogodb atlas db -username -manjumohan87 pwd -manjumohan
+        ===========================
+        1. Create a folder
+        2. generate package.json
+        3. Create index.js
+        4. .env file
+        5. Install packages - npm i package name
+            - express
+			- cors
+			- dotenv
+        6. Create .gitignore file
+        7. Update package.json script with start command
+        8. start create express server in index.js file
+            - import dotenv package
+            - import express
+            - import cors
+            - create  express server
+            - setup port number for server
+            - use cors, json parser in server app
+            - run the server app in specified port
+        9. create database and collection in mogodb atlas,copy the collection string
+        10. paste collection string in  .env file with password and database name
+        11. define steps to connect node aaplication with mongodb database
+                - create a db folder. define db conneection  create a connection.js file
+                - install mongoose : npm i mongoose
+                - import mangoose in coonection.js file
+                - get connection string from .env file to  connection.js file
+                    -to get  connection string from .env : process.env
+                - connect node app with mongodb  using connection string with  help of mongoose
+                - import connection.js file in index.js
+        12. define schema for model /collection in db 
+                -create model  folder,  create userSchema.js file
+                - import mongoose userSchema.js file
+                -create a  model / collection  to strore document as  given schema
+                    -(make sure model name should be plural )
+                - export model
+        13. To define  logic to resolve http request 
+                - create a controller folder in server folder, create useController.js file
+                - import model in useController.js file
+                - define and export logic  to resolve different http client request
+        14. Create Routes to resolve client request
+                -create a routes folder in server folder, to define Routes  create router.js file
